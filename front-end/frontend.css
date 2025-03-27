@@ -1,0 +1,416 @@
+* {
+    margin: 0%;
+    pad: 0%;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.navbar {
+    background-color: #343a40 !important;
+    padding: 10px;
+}
+
+.navbar h1 {
+    color: white;
+    margin-left: 10px;
+}
+
+
+#form input,
+#form select {
+    display: block;
+    margin: 10px 30px 0 10px;
+    padding: 7px;
+    border-radius: 10px;
+    width: 220px;
+}
+
+input[type="submit"],
+input[type="button"] {
+    background-color: black;
+    color: white;
+}
+
+
+
+.navbar {
+    height: 100px;
+}
+
+.rounded-pill {
+    width: 80px;
+    height: 80px;
+}
+
+
+#navitem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+#head {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    margin-right: 50px;
+}
+
+#navbelow {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+#form {
+    margin-top: 20px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.nav-pills .nav-link.active {
+    color: white !important;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+}
+
+#success,
+#failed {
+    margin-top: 10px;
+    justify-self: center;
+}
+
+#alert {
+    position: relative;
+    height: 40px;
+
+}
+
+.alert {
+    margin-bottom: 0px !important;
+}
+
+
+td input,
+td label {
+    margin-right: 5px;
+}
+
+
+#submit {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+
+}
+
+#submit button {
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+}
+
+#suggestion,
+#StoreSuggestion,
+#usuggestion,
+#uStoreSuggestion {
+    margin-top: -15px;
+    display: grid;
+}
+
+#suggestion button,
+#StoreSuggestion button,
+#usuggestion button,
+#uStoreSuggestion button {
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    background-color: white;
+    margin-left: 10px;
+    width: 250px;
+
+}
+
+
+
+.col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.addStoreForm {
+    align-items: center;
+    justify-content: center;
+    display: grid;
+}
+
+#CustomerForm,
+#OrderForm,
+.OrderQuantity {
+    display: ruby;
+    width: 100%;
+    justify-content: center;
+}
+
+#submitButton {
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+#productTable {
+    width: 100%;
+    border-collapse: collapse;
+    /* Ensures no space between cells */
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Table shadow */
+}
+
+#productTable th,
+#productTable td {
+    padding: 12px 15px;
+    /* Padding inside cells */
+    text-align: left;
+    /* Align text to the left */
+}
+
+#productTable th {
+    background-color: #f2f2f2;
+    /* Light gray background for headers */
+    font-weight: bold;
+}
+
+#productTable td {
+    background-color: #fff;
+    /* White background for table data */
+    border: 1px solid #ddd;
+    /* Border around table cells */
+}
+
+#productTable .input-cell {
+    width: 107%;
+    /* Make input fill the cell */
+    border: none;
+    /* Remove default input border */
+    padding: 8px;
+    /* Padding inside the input */
+    font-size: 14px;
+    /* Font size for input */
+    background-color: #f9f9f9;
+    /* Light background for inputs */
+    border-radius: 10px;
+}
+
+#productTable .input-cell:disabled {
+    background-color: #e0e0e0;
+    /* Gray background for disabled inputs */
+    color: #a0a0a0;
+    /* Light gray text for disabled inputs */
+    cursor: not-allowed;
+    /* Change cursor to indicate the input is disabled */
+}
+
+
+#productTable .remove-btn {
+    padding: 6px 12px;
+    background-color: #ff4d4d;
+    /* Red button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#productTable .remove-btn:hover {
+    background-color: #e60000;
+    /* Darker red on hover */
+}
+
+#productTable td:last-child {
+    text-align: center;
+    /* Center-align the "Remove" button */
+}
+
+
+[id^="OrderSuggestion"] {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+.suggestionCard
+{
+   background-color: white;
+   height: auto;
+   display: flex;
+   align-items: center;
+   width: 107%;
+   justify-content: center;
+}
+.suggestionCard h6
+{
+    height: 30px;
+    border-radius: 10px;
+    width: 107%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    
+}
+.suggestionCard h6:hover
+{
+    background-color: #e9e8e8;
+}
+
+#AddBtn 
+{
+    display: flex; 
+    justify-content: right;
+    border-radius: 10px;
+}
+
+#AddBtn button{
+    border-radius: 2px;
+    color: black;
+    border-radius: 10px;
+    background-color: rgb(125, 231, 125);
+}
+
+#submitButton input
+{
+    border-radius: 10px;
+    width: 250px;
+    font: inherit;
+    height: 42px;
+
+    margin-bottom: 100px;
+    
+}
+
+
+
+#myform 
+{
+    margin: 50px;
+}
+#myform input,#totalOrderValuediv input
+{
+   text-align: center;
+}
+
+#totalOrderValuediv
+{
+    justify-content: right;
+    align-items: center;
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#CustomerDetails input,#myform input,#totalOrderValuediv input{
+    border-radius: 5px;
+    font-size: inherit;
+    height: 42px;
+    margin: 10px;
+    width: 250px;
+}
+
+#CustomerForm label{
+    margin: 10px;
+}
+
+#CustomerForm
+{
+    display: block;
+}
+
+#CustomerDetails .row
+{
+    margin: 20px;
+}
+
+#CustomerDetails .col
+{
+    display: grid;
+}
+
+
+
+table {
+    table-layout: fixed;
+    width: 100%;
+}
+
+td,
+th {
+    overflow: hidden;
+    background-color: black;
+    text-overflow: ellipsis;
+    max-width: 200px;
+}
+
+/* Default state: Truncate text and show ellipsis */
+.expandable {
+    max-width: 300px;
+    /* Adjust this width as needed */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    /* Indicate that it's clickable */
+}
+
+
+
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+
+}
+
+
+
+.tablediv {
+    overflow-x: auto;
+}
+
+
+#aStoreSuggestion
+{
+    display:grid;
+    margin-top:-12px;
+    justify-content: center;
+    border-bottom: 2px solid black;
+    width: 250px;
+    margin-left:10px
+    
+}
+
+#aStoreSuggestion button
+{
+    width: 250px;
+    background-color: white;
+    border-bottom: none;
+}
+

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMS: Manage Inventory
+    </title>
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+    <link rel="stylesheet" href="frontend.css">
+    <link rel="shortcut icon" href="images/Logo.png" type="image/x-icon">
+
+    <script src="script.js"></script>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div id="navitem">
+            <a class="navbar-brand" href="#">
+                <img src="images/Logo.png" alt="Avatar Logo" class="rounded-pill">
+            </a>
+            <div id="head">
+                <h1 style="color: white;">Edit Product</h1>
+            </div>
+        </div>
+
+    </nav>
+
+
+
+
+
+
+
+    <div id="form" style="display: flex;">
+        <form id="myform" onsubmit="updateParentProduct(event)">
+
+            <div>
+                <label for="pproductId"> Product Id:</label>
+                <input type="number" name="pproductId" id="pproductId" placeholder=" Product Id" disabled>
+            </div>
+            <div>
+                <label for="pproductName"> Product Name:</label>
+                <input type="text" name="pproductName" id="pproductName" placeholder=" Product Name" required>
+            </div>
+
+            <div>
+                <label for="pcategory">Select Category:</label>
+                <select name="pcategory" class="category" id="pcategory" required>
+                    <option value="" selected disabled>Select category</option>
+                    <option value="Mobile">Mobile </option>
+                    <option value="TV and AV">TV and AV</option>
+                    <option value="Home Appliances">Home Appliances</option>
+                    <option value="Laptops and Monitors">Laptops and Monitors</option>
+                    <option value="Accessories">Accessories</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="pproductPrice"> Price:</label>
+
+                <input type="text" name="pproductPrice" id="pproductPrice" placeholder=" price in $" required>
+            </div>
+
+            <div>
+                <label for="pSKU"> SKU:</label>
+
+                <input type="text" name="pSKU" id="pSKU" placeholder=" SKU">
+            </div>
+
+            <div>
+                <input type="submit" value="Update product">
+            </div>
+        </form>
+    </div>
+
+
+
+    <script>
+        window.onload = () => {
+            const url = window.location.href;
+            const params = new URLSearchParams(window.location.search);
+            const productId = params.get('productId');
+            document.getElementById('pproductId').value = productId;
+
+            setInterval(getProductByid(productId), 1000);
+
+        }
+
+    </script>
+
+
+</body>
+
+</html>
